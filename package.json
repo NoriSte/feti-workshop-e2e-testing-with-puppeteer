@@ -1,0 +1,28 @@
+{
+  "name": "feti-workshop-e2e-testing-with-puppeteer",
+  "version": "1.0.0",
+  "description": "A project built for a FETI workshop",
+  "main": "index.js",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "workshop:ready:test": "jest test/min.e2e.test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoriSte/feti-workshop-e2e-testing-with-puppeteer.git"
+  },
+  "author": "Stefano Magni (@NoriSte)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoriSte/feti-workshop-e2e-testing-with-puppeteer/issues"
+  },
+  "homepage": "https://github.com/NoriSte/feti-workshop-e2e-testing-with-puppeteer#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^23.4.2",
+    "puppeteer": "^1.6.1"
+  }
+}
