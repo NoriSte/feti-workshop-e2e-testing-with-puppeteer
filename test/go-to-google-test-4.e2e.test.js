@@ -8,21 +8,23 @@ let browser;
 let page;
 
 beforeAll(async () => {
-  browser = await puppeteer.launch({headless:false, slowMo:100});
+  browser = await puppeteer.launch();
   page = await browser.newPage();
 });
 afterAll(async () => {
   await browser.close();
 });
 
-describe(`That's our first E2E test`, () => {
+describe(`Test 4`, () => {
   beforeAll(async () => {
-    await page.goto(`file:${path.join(__dirname, './../dist/test-3.html')}`);
+    await page.goto(`file:${path.join(__dirname, './../dist/test-4.html')}`);
 
     // don't let the test fail for a silly element like a cookie footer
     // It could be already accepted when you navigate to another page
     if(await page.$('[data-test="cookie-footer-acceptance"]')) {
       await page.click('[data-test="cookie-footer-acceptance"]');
+
+      // wait... but now the element won't be hidden anymore...
 
       // you can wait that an element is hidden
       // @see https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pagewaitforselectorselector-options

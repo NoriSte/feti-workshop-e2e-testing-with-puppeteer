@@ -8,28 +8,20 @@
   <meta name="author" content="">
   <link rel="icon" href="https://v4-alpha.getbootstrap.com/favicon.ico">
 
-  <title>FETI E2E tests : test 3</title>
+  <title>FETI E2E tests : test 4</title>
   <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
 
   <!-- Bootstrap core CSS -->
   <link href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <style>
-    .fadeout {
-      animation: fadeout-animation 2s;
-      animation-iteration-count: 1;
-      animation-fill-mode: forwards;
+  <script>
+    const hideCookieFooter = () => {
+      const el = document.getElementById('cookie-footer');
+      el.style.opacity = 0;
+      el.style['pointer-events'] = 'none';
+      window.dispatchEvent(new Event('cookieFooterDidHide'));
     }
-    @keyframes fadeout-animation {
-    from {
-      opacity: 1;
-      }
-    to {
-      opacity: 0;
-      visibility: hidden;
-    }
-}
-  </style>
+  </script>
 </head>
 
 <body>
@@ -37,7 +29,7 @@
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
     <div class="container">
-      <h1 class="display-3">FETI E2E tests workshop: test 3</h1>
+      <h1 class="display-3">FETI E2E tests workshop: test 4</h1>
       <p>This template comes from Bootstrap. Your goal it to test that the button at the end of the page brings the user to Google.com.</p>
     </div>
   </div>
@@ -123,7 +115,7 @@
           <br><br>
           <br><br>
           <p class="text-muted credit" style="color:white!important;">
-            I'm the usual cookie footer. <button data-test="cookie-footer-acceptance" onclick="javascript:document.getElementById('cookie-footer').classList.add('fadeout');">Click here</button> to accept everything.
+            I'm the usual cookie footer. <button data-test="cookie-footer-acceptance" onclick="javascript:hideCookieFooter();">Click here</button> to accept everything.
           </p>
           <br><br>
           <br><br>
