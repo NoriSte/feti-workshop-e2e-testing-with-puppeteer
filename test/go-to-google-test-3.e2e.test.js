@@ -8,7 +8,7 @@ let browser;
 let page;
 
 beforeAll(async () => {
-  browser = await puppeteer.launch({});
+  browser = await puppeteer.launch({headless:false, slowMo:100});
   page = await browser.newPage();
 });
 afterAll(async () => {
@@ -17,7 +17,7 @@ afterAll(async () => {
 
 describe(`That's our first E2E test`, () => {
   beforeAll(async () => {
-    await page.goto(`file:${path.join(__dirname, './../dist/test-2.html')}`);
+    await page.goto(`file:${path.join(__dirname, './../dist/test-3.html')}`);
 
     // don't let the test fail for a silly element like a cookie footer
     // It could be already accepted when you navigate to another page
