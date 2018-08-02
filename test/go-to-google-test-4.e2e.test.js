@@ -24,12 +24,10 @@ describe(`Test 4`, () => {
     if(await page.$('[data-test="cookie-footer-acceptance"]')) {
       await page.click('[data-test="cookie-footer-acceptance"]');
 
-      // wait... but now the element won't be hidden anymore...
-
-      // you can wait that an element is hidden
-      // @see https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pagewaitforselectorselector-options
-      await page.waitForSelector('#cookie-footer', {
-        hidden: true
+      // @see https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pageevaluatepagefunction-args
+      await page.evaluate((resolve) => {
+        // the following code will run into the browser page
+        window.addEventListener('cookieFooterDidHide', () => resolve());
       });
     }
   });
