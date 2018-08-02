@@ -23,6 +23,12 @@ describe(`That's our first E2E test`, () => {
     // It could be already accepted when you navigate to another page
     if(await page.$('[data-test="cookie-footer-acceptance"]')) {
       await page.click('[data-test="cookie-footer-acceptance"]');
+
+      // you can wait that an element is hidden
+      // @see https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pagewaitforselectorselector-options
+      await page.waitForSelector('#cookie-footer', {
+        hidden: true
+      });
     }
   });
 
