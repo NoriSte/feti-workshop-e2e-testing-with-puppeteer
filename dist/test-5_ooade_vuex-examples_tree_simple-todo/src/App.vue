@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <h1>{{ msg }}</h1>
-    <h3>Test 5: add a new todo programmatically</h3>
-    <p>You just need to execute <code>vueInstance.$store.commit('addTodo', 'TODO_NAME')</code></p>
-    <p>Then check that it's been added reading <code>vueInstance.$store.state.todos</code></p>
+    <h3>Test 5: check todos programmatically</h3>
+    <p>You just need to add some Todos via UI, to remove some of them and to check the state with (Vuex) programmatically.</p>
+    <p>You can read the state by executing <code>vueInstance.$store.state.todos</code> in page.</p>
     <simpletodo></simpletodo>
   </div>
 </template>
