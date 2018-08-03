@@ -60,12 +60,13 @@ describe(`Test 5`, () => {
   }, 10000);
 
   test(`Remove the first two todos`, async (done) => {
-    // it should be very easy...
+    await page.click(removeItemSelector);
+    await page.click(removeItemSelector);
     done();
   }, 10000);
 
   test(`Check the remaining todos directly from the store`, async () => {
-    // @see https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pageevaluatepagefunction-args
-    expect(/* ... */).toEqual(['Pass this test', 'Join the FETI volunteers']);
+    const state = await page.evaluate(() => window.vueInstance.$store.state.todos);
+    expect(state.map(item => item.text)).toEqual(['Pass this test', 'Join the FETI volunteers']);
   }, 10000);
 });
