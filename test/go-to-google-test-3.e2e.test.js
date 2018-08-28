@@ -15,7 +15,7 @@ afterAll(async () => {
   await browser.close();
 });
 
-describe(`That's our first E2E test`, () => {
+describe(`That's our third E2E test`, () => {
   beforeAll(async () => {
     await page.goto(`file:${path.join(__dirname, './../dist/test-3.html')}`);
 
