@@ -13,19 +13,12 @@ The reference repo of a workshop for FETI about browser automation (both for E2E
 - [Branch naming](#branch-naming)
 - [A special thank to](#a-special-thank-to)
 
-<br />
-<br />
-<br />
-
 ### Links
 
 - [Slides](https://slides.com/noriste/e2e-testing-workshop-feti)
 - [FETI (FrontEnders Ticino)](http://www.frontenders.ch/)
 - [Meetup (TBD)](http://www.frontenders.ch/eventi-passati.html)
 - [Puppeteer API](https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md)
-<br />
-<br />
-<br />
 
 ### Installation instructions
 
@@ -71,9 +64,6 @@ Every test has a working solution in another branch
 - test-5-step2-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/16/1))
 - test-6-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/21/1))
 - test-7-solution TBD
-<br />
-<br />
-<br />
 
 ### A special thank to
 
