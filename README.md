@@ -7,14 +7,18 @@ The reference repo of a workshop for FETI about browser automation (both for E2E
 ## A 2018 workshop for FETI hosted in Appway (Chiasso)
 
 ### Contents
+
 - [Links](#links)
 - [Installation instructions](#installation-instructions)
 - [Branch naming](#branch-naming)
 - [A special thank to](#a-special-thank-to)
+
 <br />
 <br />
 <br />
+
 ### Links
+
 - [Slides](https://slides.com/noriste/e2e-testing-workshop-feti)
 - [FETI (FrontEnders Ticino)](http://www.frontenders.ch/)
 - [Meetup (TBD)](http://www.frontenders.ch/eventi-passati.html)
@@ -22,7 +26,9 @@ The reference repo of a workshop for FETI about browser automation (both for E2E
 <br />
 <br />
 <br />
+
 ### Installation instructions
+
 ```bash
 $ yarn install
 $ yarn test
@@ -43,7 +49,9 @@ it means that you're ready for the attending the workshop or to train by yoursel
 <br />
 <br />
 <br />
+
 ### Branch naming
+
 - master: just the README and the isntallation instructions
 - test-1 ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/5)): write a test that passes if the main button takes the user to google.com
 - test-2 ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/8)): it's the same of test-1... but with a damper cookie footer to be accepted
@@ -66,7 +74,9 @@ Every test has a working solution in another branch
 <br />
 <br />
 <br />
+
 ### A special thank to
+
 - [FETI](http://www.frontenders.ch/) for all the work they do
 - [Appway](https://www.appway.com) for the amazing location
 - Massimo Foti for inspiring me with his [Unit Testing Workshop](https://www.meetup.com/it-IT/FrontEnders-Ticino/events/245384423/)
