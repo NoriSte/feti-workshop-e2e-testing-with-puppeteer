@@ -25,10 +25,10 @@ describe(`Test 4`, () => {
       await page.click('[data-test="cookie-footer-acceptance"]');
 
       // @see https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pageevaluatepagefunction-args
-      await page.evaluate((resolve) => {
+      await page.evaluate(() => new Promise(resolve => {
         // the following code will run into the browser page
         window.addEventListener('cookieFooterDidHide', () => resolve());
-      });
+      }));
     }
   });
 
