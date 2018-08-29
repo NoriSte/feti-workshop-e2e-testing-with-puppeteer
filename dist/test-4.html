@@ -16,10 +16,12 @@
 
   <script>
     const hideCookieFooter = () => {
-      const el = document.getElementById('cookie-footer');
-      el.style.opacity = 0;
-      el.style['pointer-events'] = 'none';
-      window.dispatchEvent(new Event('cookieFooterDidHide'));
+      setTimeout(() => {
+        const el = document.getElementById('cookie-footer');
+        el.style.opacity = 0;
+        el.style['pointer-events'] = 'none';
+        window.dispatchEvent(new Event('cookieFooterDidHide'));
+      }, 100);
     }
   </script>
 </head>
