@@ -1,5 +1,5 @@
 /**
- * The simplest test just to check that all the necessary dependancies are ready for the workshop
+ * Test 5, step 1
  */
 
 const puppeteer = require('puppeteer');
