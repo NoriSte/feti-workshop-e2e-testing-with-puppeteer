@@ -7,8 +7,7 @@
     "testEnvironment": "node"
   },
   "scripts": {
-    "test": "npm run workshop:ready:test",
-    "workshop:ready:test": "jest test/min.e2e.test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
