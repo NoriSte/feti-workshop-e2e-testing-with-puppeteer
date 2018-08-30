@@ -26,7 +26,7 @@ const scrapeGoogle = async (options) => {
 
     // URLs reading
     for(let i = result.length, j = 0, m = els.length; i < options.limit && j < m; i++, j++) {
-      // you have two ways of retrieve en element attribute, one is through JSHandle functions...
+      // you have two ways for retrieving en element attribute, one is through JSHandle functions...
       // @see https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#class-jshandle
       const jsHandle = await els[j].getProperty('href');
       const url = await jsHandle.jsonValue();
