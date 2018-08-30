@@ -53,7 +53,6 @@ it means that you're ready for the attending the workshop or to train by yoursel
 - test-5-step1 ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/15)): add a Todo in the Vue app and check that it's showed in page
 - test-5-step2 ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/16)): ad and remove some Todos and then check the state of the store of the Vue app
 - test-6 ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/21)): scrape the first 30 results of a given query directly by Google
-- test-7: TBD
 
 Every test has a working solution in another branch
 - test-1-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/5/1))
@@ -63,7 +62,6 @@ Every test has a working solution in another branch
 - test-5-step1-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/15/1))
 - test-5-step2-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/16/1))
 - test-6-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/21/1))
-- test-7-solution TBD
 
 ### A special thank to
 
