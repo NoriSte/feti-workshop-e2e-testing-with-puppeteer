@@ -22,13 +22,18 @@ describe(`Test 4`, () => {
     // don't let the test fail for a silly element like a cookie footer
     // It could be already accepted when you navigate to another page
     if(await page.$('[data-test="cookie-footer-acceptance"]')) {
-      await page.click('[data-test="cookie-footer-acceptance"]');
+      try {
+        await page.click('[data-test="cookie-footer-acceptance"]');
 
-      // @see https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pageevaluatepagefunction-args
-      await page.evaluate(() => new Promise(resolve => {
-        // the following code will run into the browser page
-        window.addEventListener('cookieFooterDidHide', () => resolve());
-      }));
+        // @see https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pageevaluatepagefunction-args
+        await page.evaluate(() => new Promise(resolve => {
+          // the following code will run into the browser page
+          window.addEventListener('cookieFooterDidHide', () => resolve());
+        }));
+
+      } catch(e) {
+        // the element exists but maybe it isn't clickable
+      }
     }
   });
 
