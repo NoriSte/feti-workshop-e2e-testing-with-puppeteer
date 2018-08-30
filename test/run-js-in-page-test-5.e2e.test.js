@@ -40,7 +40,7 @@ describe(`Test 5`, () => {
     // you'll probably need
     // @see https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pageevaluatepagefunction-args
 
-    // and then find your mot suitable ssertion
+    // and then find your most suitable assertion
     // @see https://jestjs.io/docs/en/expect.html
 
   }, 10000);
