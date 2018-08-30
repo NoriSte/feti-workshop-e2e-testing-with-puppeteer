@@ -17,7 +17,7 @@ afterAll(async () => {
 
 describe(`That's our first E2E test`, () => {
   test(`The button brings the user to google.com`, async (done) => {
-    await page.goto(`file:${path.join(__dirname, './../dist/index.html')}`);
+    await page.goto(`file:${path.join(__dirname, './../dist/test-1.html')}`);
 
     // always add a 'data-test' attribute to the elements that will parteccipate to your tests
     await page.click('*[data-test="button"]');
