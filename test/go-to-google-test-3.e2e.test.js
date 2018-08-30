@@ -22,7 +22,12 @@ describe(`That's our third E2E test`, () => {
     // don't let the test fail for a silly element like a cookie footer
     // It could be already accepted when you navigate to another page
     if(await page.$('[data-test="cookie-footer-acceptance"]')) {
-      await page.click('[data-test="cookie-footer-acceptance"]');
+      try {
+        // what happens if it exists but it isn't clickable (eg. it's hidden)? A try/catch will manage the case
+        await page.click('[data-test="cookie-footer-acceptance"]');
+      } catch(e) {
+        // the element exists but it isn't clickable
+      }
     }
   });
 
