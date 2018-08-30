@@ -1,32 +1,38 @@
 
 /*
-Scrape the latest 40 URLs from Google searching for the "bitcoin" query
+Scrape the latest 30 URLs from Google searching for the "bitcoin" query
 */
 
 const puppeteer = require('puppeteer');
 
-(async () => {
+const scrapeGoogle = async (options) => {
+  const defaultOptions = {
+    domain: 'https://www.google.it',
+    limit: 30,
+    query: 'bitcoin'
+  };
+  options = {...defaultOptions, ...options};
   const browser = await puppeteer.launch({});
   const page = await browser.newPage();
 
-  const limit = 30;
-  const domain = 'https://www.google.it';
-  const query = 'bitcoin';
+  // they could be useful :)
   const resultSelector = 'div.g h3.r a';
   const nextButtonSelector = '#pnnext';
 
-  await page.goto(`${domain}/?gfe_rd=cr&ei=J4KAWL2qBovCXpDYgRg#q=${query}`);
+  await page.goto(`${options.domain}/?gfe_rd=cr&ei=J4KAWL2qBovCXpDYgRg#q=${options.query}`);
 
 
   const scraping = async (result = []) => {
-
-    // you have to read the first 30 results from Google for the given query, have fun :)
-
-    return result;
+    ////////////////////////////////////////////////////////////////////////////////////
+    // write here your code...
+    // test it running $ yarn test
+    // if you'd like to run when you save the file you can even run $ npx nodemon --exec "yarn test"
+    ////////////////////////////////////////////////////////////////////////////////////
   }
 
   const result = await scraping();
-  console.log(result);
   browser.close();
-  process.exit();
-})();
+  return result;
+}
+
+module.exports = scrapeGoogle;
