@@ -16,7 +16,7 @@ afterAll(async () => {
 });
 
 describe(`That's our second E2E test`, () => {
-  test(`The button brings the user to google.com`, async (done) => {
+  test(`The button brings the user to the next page`, async (done) => {
     await page.goto(`file:${path.join(__dirname, './../dist/test-2.html')}`);
 
     // and then, like the first test:
