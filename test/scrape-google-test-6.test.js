@@ -22,7 +22,7 @@ describe(`Test 6`, () => {
 
   test(`It works with queries with more a number of results included between 10 and 30`, async () => {
     const result = await scrapeGoogle({query: 'site:conio.com wallet'});
-    expect(result.length).toBeGreaterThan(10);
+    expect(result.length).toBeGreaterThanOrEqual(10);
     expect(result.length).toBeLessThan(30);
   }, 20000);
 });
