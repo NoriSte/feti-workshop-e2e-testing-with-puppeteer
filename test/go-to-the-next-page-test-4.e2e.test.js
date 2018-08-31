@@ -37,14 +37,14 @@ describe(`Test 4`, () => {
     }
   });
 
-  test(`The button brings the user to google.com`, async (done) => {
+  test(`The button brings the user to the next page`, async (done) => {
 
     // always add a 'data-test' attribute to the elements that will parteccipate to your tests
     await page.click('[data-test="button"]');
 
     // waiting for en element is a good way to be 100% sure that the page is been loaded
     // again: use a data-test attribute in your sites
-    await page.waitForSelector('#hplogo');
+    await page.waitForSelector('[data-test="main-text"]');
 
     done();
   }, 10000);
