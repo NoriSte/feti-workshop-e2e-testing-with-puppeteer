@@ -17,7 +17,7 @@ describe(`Test 6`, () => {
 
   test(`It works with queries with less than 10 results`, async () => {
     const result = await scrapeGoogle({query: 'site:conio.com multisig'});
-    expect(result.length < 10).toBe(true);
+    expect(result.length).toBeLessThanOrEqual(10);
   }, 20000);
 
   test(`It works with queries with more a number of results included between 10 and 30`, async () => {
