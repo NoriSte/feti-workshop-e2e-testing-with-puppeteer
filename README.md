@@ -62,6 +62,7 @@ Every test has a working solution in another branch
 - test-5-step1-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/15/1))
 - test-5-step2-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/16/1))
 - test-6-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/21/1))
+- develop: here you can find all the tests and the solutions (remember to ```$ yarn install``` before launching tests because I added the jest-puppeteer package)
 
 ### A special thank to
 
