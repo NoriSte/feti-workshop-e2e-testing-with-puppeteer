@@ -9,6 +9,9 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "preset": "jest-puppeteer"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NoriSte/feti-workshop-e2e-testing-with-puppeteer.git"
@@ -22,6 +25,7 @@
   "dependencies": {},
   "devDependencies": {
     "jest": "^23.4.2",
+    "jest-puppeteer": "^3.3.1",
     "puppeteer": "^1.6.1"
   }
 }

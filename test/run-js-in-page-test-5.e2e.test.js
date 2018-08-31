@@ -2,17 +2,14 @@
  * Test 5, step 2
  */
 
-const puppeteer = require('puppeteer');
 const path = require('path');
-let browser;
 let page;
 
 beforeAll(async () => {
-  browser = await puppeteer.launch();
   page = await browser.newPage();
 });
 afterAll(async () => {
-  await browser.close();
+  await page.close()
 });
 
 describe(`Test 5`, () => {
