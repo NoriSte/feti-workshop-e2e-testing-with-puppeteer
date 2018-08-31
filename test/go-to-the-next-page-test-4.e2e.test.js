@@ -35,7 +35,7 @@ describe(`Test 4`, () => {
     }
   });
 
-  test(`The button brings the user to google.com`, async (done) => {
+  test(`The button brings the user to the next page`, async (done) => {
 
     // always add a 'data-test' attribute to the elements that will parteccipate to your tests
     await page.click('[data-test="button"]');
