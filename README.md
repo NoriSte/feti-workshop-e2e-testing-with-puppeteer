@@ -46,7 +46,7 @@ it means that you're ready for the attending the workshop or to train by yoursel
 ### Branch naming
 
 - master: just the README and the isntallation instructions
-- test-1 ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/5)): write a test that passes if the main button takes the user to google.com
+- test-1 ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/5)): write a test that passes if the main button takes the user to the linked page
 - test-2 ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/8)): it's the same of test-1... but with a damper cookie footer to be accepted
 - test-3 ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/9)): the cookie footer now disappear with a CSS animation
 - test-4 ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/12)): the cookie footer trigger an event when it's hidden
@@ -62,7 +62,7 @@ Every test has a working solution in another branch
 - test-5-step1-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/15/1))
 - test-5-step2-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/16/1))
 - test-6-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/21/1))
-- develop: here you can find all the tests and the solutions (remember to ```$ yarn install``` before launching tests because I added the jest-puppeteer package)
+- develop: here you can find all the tests and the solutions
 
 ### A special thank to
 
