@@ -22,12 +22,15 @@ const scrapeGoogle = async (options) => {
   await page.goto(`${options.domain}/?gfe_rd=cr&ei=J4KAWL2qBovCXpDYgRg#q=${options.query}`);
 
 
-  const scraping = async (result = []) => {
+  const scraping = async () => {
+
     ////////////////////////////////////////////////////////////////////////////////////
     // write here your code...
     // test it running $ yarn test
     // if you'd like to run when you save the file you can even run $ npx nodemon --exec "yarn test"
     ////////////////////////////////////////////////////////////////////////////////////
+
+    return /*...*/;
   }
 
   const result = await scraping();
