@@ -46,22 +46,22 @@ it means that you're ready for the attending the workshop or to train by yoursel
 ### Branch naming
 
 - master: just the README and the isntallation instructions
-- test-1 ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/5)): write a test that passes if the main button takes the user to the linked page
-- test-2 ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/8)): it's the same of test-1... but with a damper cookie footer to be accepted
-- test-3 ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/9)): the cookie footer now disappear with a CSS animation
-- test-4 ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/12)): the cookie footer trigger an event when it's hidden
-- test-5-step1 ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/15)): add a Todo in the Vue app and check that it's showed in page
-- test-5-step2 ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/16)): ad and remove some Todos and then check the state of the store of the Vue app
-- test-6 ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/21)): scrape the first 30 results of a given query directly by Google
+- test-1 ([code](https://github.com/NoriSte/feti-workshop-e2e-testing-with-puppeteer/blob/test-1/test/test-1.e2e.test.js#L22)): write a test that passes if the main button takes the user to the linked page
+- test-2: it's the same of test-1... but with a damper cookie footer to be accepted
+- test-3: the cookie footer now disappear with a CSS animation
+- test-4: the cookie footer trigger an event when it's hidden
+- test-5-step1 ([code](https://github.com/NoriSte/feti-workshop-e2e-testing-with-puppeteer/blob/test-5-step1/test/test-5.e2e.test.js#L35)): add a Todo in the Vue app and check that it's showed in page
+- test-5-step2 ([code](https://github.com/NoriSte/feti-workshop-e2e-testing-with-puppeteer/blob/test-5-step2/test/test-5.e2e.test.js#L62)): ad and remove some Todos and then check the state of the store of the Vue app
+- test-6 ([code](https://github.com/NoriSte/feti-workshop-e2e-testing-with-puppeteer/blob/test-6/scrape-google-test-6.js#L28)): scrape the first 30 results of a given query directly by Google
 
 Every test has a working solution in another branch
-- test-1-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/5/1))
-- test-2-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/8/1))
-- test-3-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/9/1))
-- test-4-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/12/1))
-- test-5-step1-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/15/1))
-- test-5-step2-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/16/1))
-- test-6-solution ([slide](https://slides.com/noriste/e2e-testing-workshop-feti#/21/1))
+- test-1-solution ([code](https://github.com/NoriSte/feti-workshop-e2e-testing-with-puppeteer/blob/test-1-solution/test/test-1.e2e.test.js#L22))
+- test-2-solution ([code](https://github.com/NoriSte/feti-workshop-e2e-testing-with-puppeteer/blob/test-2-solution/test/test-2.e2e.test.js#L24))
+- test-3-solution ([code](https://github.com/NoriSte/feti-workshop-e2e-testing-with-puppeteer/blob/test-3-solution/test/test-3.e2e.test.js#L30))
+- test-4-solution ([code](https://github.com/NoriSte/feti-workshop-e2e-testing-with-puppeteer/blob/test-4-solution/test/test-4.e2e.test.js#L31))
+- test-5-step1-solution ([code](https://github.com/NoriSte/feti-workshop-e2e-testing-with-puppeteer/blob/test-5-step1-solution/test/test-5.e2e.test.js#L39))
+- test-5-step2-solution ([code](https://github.com/NoriSte/feti-workshop-e2e-testing-with-puppeteer/blob/test-5-step2-solution/test/test-5.e2e.test.js#L62))
+- test-6-solution ([code](https://github.com/NoriSte/feti-workshop-e2e-testing-with-puppeteer/blob/test-6-solution/scrape-google-test-6.js#L24))
 - develop: here you can find all the tests and the solutions
 
 ### A special thank to
