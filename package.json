@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "A project built for a FETI workshop",
   "main": "index.js",
-  "jest": {
-    "testEnvironment": "node"
-  },
   "scripts": {
     "test": "jest"
   },
