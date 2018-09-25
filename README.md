@@ -23,8 +23,8 @@ The reference repo of a workshop for FETI about browser automation (both for E2E
 ### Installation instructions
 
 ```bash
-$ yarn install
-$ yarn test
+$ npm install
+$ npm test
 ```
 
 If you see something like this
