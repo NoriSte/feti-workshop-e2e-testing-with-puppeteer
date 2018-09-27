@@ -22,7 +22,7 @@ describe(`That's our first E2E test`, () => {
     // always add a 'data-test' attribute to the elements that will participate to your tests
     await page.click('[data-test="button"]');
 
-    // check for a specific contentis a good way to be 100% sure that the page is been loaded
+    // check for a specific content is a good way to be 100% sure that the page is been loaded
     await expect(page).toMatch('Hello from FETI');
   }, 5000);
 });
