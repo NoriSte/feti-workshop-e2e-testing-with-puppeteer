@@ -16,13 +16,14 @@ afterAll(async () => {
 });
 
 describe(`That's our first E2E test`, () => {
-  test(`The button brings the user to the next page`, async (done) => {
+  test(`The button brings the user to the next page`, async () => {
     await page.goto(`file:${path.join(__dirname, './../dist/test-1.html')}`);
 
-    // and then:
-    // - you should click the button
-    // - you should check if the page is been loaded
-    // - call done()
+    // - run $npm test
+    // - the test will fail
+    // - use puppeteer to click the button
+    // - and then re-run $npm test
 
-  }, 10000);
+    await expect(page).toMatch('Hello from FETI');
+  }, 5000);
 });
