@@ -8,7 +8,10 @@ let browser;
 let page;
 
 beforeAll(async () => {
-  browser = await puppeteer.launch();
+  browser = await puppeteer.launch({
+    headless: true,
+    slowMo: 0
+  });
   page = await browser.newPage();
 });
 afterAll(async () => {
@@ -37,15 +40,11 @@ describe(`Test 4`, () => {
     }
   });
 
-  test(`The button brings the user to the next page`, async (done) => {
-
-    // always add a 'data-test' attribute to the elements that will parteccipate to your tests
+  test(`The button brings the user to the next page`, async () => {
+    // always add a 'data-test' attribute to the elements that will participate to your tests
     await page.click('[data-test="button"]');
 
-    // waiting for en element is a good way to be 100% sure that the page is been loaded
-    // again: use a data-test attribute in your sites
-    await page.waitForSelector('[data-test="main-text"]');
-
-    done();
-  }, 10000);
+    // check for a specific content is a good way to be 100% sure that the page is been loaded
+    await expect(page).toMatch('Hello from FETI');
+  }, 5000);
 });
