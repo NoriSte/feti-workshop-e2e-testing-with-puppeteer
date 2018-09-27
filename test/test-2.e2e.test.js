@@ -8,7 +8,10 @@ let browser;
 let page;
 
 beforeAll(async () => {
-  browser = await puppeteer.launch({});
+  browser = await puppeteer.launch({
+    headless: true,
+    slowMo: 0
+  });
   page = await browser.newPage();
 });
 afterAll(async () => {
@@ -16,13 +19,13 @@ afterAll(async () => {
 });
 
 describe(`That's our second E2E test`, () => {
-  test(`The button brings the user to the next page`, async (done) => {
+  test(`The button brings the user to the next page`, async () => {
     await page.goto(`file:${path.join(__dirname, './../dist/test-2.html')}`);
 
-    // and then, like the first test:
-    // - you should click the button
-    // - you should check if the page is been loaded
-    // - call done()
+    // always add a 'data-test' attribute to the elements that will participate to your tests
+    await page.click('[data-test="button"]');
 
-  }, 10000);
+    // check for a specific content is a good way to be 100% sure that the page is been loaded
+    await expect(page).toMatch('Hello from FETI');
+  }, 5000);
 });
