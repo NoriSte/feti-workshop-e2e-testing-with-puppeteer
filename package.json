@@ -4,7 +4,8 @@
   "description": "A project built for a FETI workshop",
   "main": "index.js",
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "preset": "jest-puppeteer"
   },
   "scripts": {
     "test": "jest"
