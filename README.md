@@ -72,3 +72,4 @@ Every test has a working solution in another branch
 - [Appway](https://www.appway.com) for the amazing location
 - Massimo Foti for inspiring me with his [Unit Testing Workshop](https://www.meetup.com/it-IT/FrontEnders-Ticino/events/245384423/)
 - Kent C. Dodds for the amazing “[Solidifying what you learn](https://blog.kentcdodds.com/solidifying-what-you-learn-6650258c84be)” post
+- Luca Previtali and [Creeo Studio](http://creeostudio.it/) that allowed me to try this workshop in advance
