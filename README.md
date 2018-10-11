@@ -24,6 +24,8 @@ The reference repo of a workshop for FETI about browser automation (both for E2E
 
 ### Installation instructions
 
+The project requires Node.js 8+, launch
+
 ```bash
 $ npm install
 $ npm test
