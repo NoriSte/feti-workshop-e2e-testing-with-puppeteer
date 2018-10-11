@@ -6,12 +6,14 @@ The reference repo of a workshop for FETI about browser automation (both for E2E
 # E2E testing and browser scraping with Puppeteer
 ## A 2018 workshop for FETI hosted in Appway (Chiasso)
 
-### Contents
+## Contents
 
 - [Links](#links)
 - [Installation instructions](#installation-instructions)
 - [Branch naming](#branch-naming)
 - [A special thank to](#a-special-thank-to)
+
+---
 
 ### Links
 
