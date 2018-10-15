@@ -1,5 +1,6 @@
 ## feti-workshop-e2e-testing-with-puppeteer
 The reference repo of a workshop for FETI about browser automation (both for E2E testing and for web scraping) with Puppeteer. Workshop level: basic.
+To attend the workshop you only need to know JS promises and async/await.
 
 **Important**: if you are just looking for the code of the working tests, you'll find it on the  ```develop``` branch
 
