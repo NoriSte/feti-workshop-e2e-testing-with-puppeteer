@@ -16,7 +16,7 @@ const scrapeGoogle = async (options) => {
   const page = await browser.newPage();
 
   // they could be useful :)
-  const resultSelector = 'div.g h3.r a';
+  const resultSelector = 'div.g .r>a';
   const nextButtonSelector = '#pnnext';
 
   await page.goto(`${options.domain}/?gfe_rd=cr&ei=J4KAWL2qBovCXpDYgRg#q=${options.query}`);
