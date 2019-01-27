@@ -13,7 +13,7 @@ const scrapeGoogle = async (options) => {
   options = {...defaultOptions, ...options};
   const page = await browser.newPage();
 
-  const resultSelector = 'div.g .r>a';
+  const resultSelector = 'div.g .r a[href^="http"]:not([class="fl"])';
   const nextButtonSelector = '#pnnext';
 
   await page.goto(`${options.domain}/?gfe_rd=cr&ei=J4KAWL2qBovCXpDYgRg#q=${options.query}`);
