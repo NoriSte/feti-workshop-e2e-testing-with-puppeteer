@@ -30,7 +30,6 @@ const scrapeGoogle = async (options) => {
       // @see https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#class-jshandle
       const jsHandle = await els[j].getProperty('href');
       const url = await jsHandle.jsonValue();
-
       result.push(url);
     }
 
