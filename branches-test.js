@@ -1,7 +1,7 @@
 
 /*
   Don't consider this script, it's useful just for launching the tests on every branch and be 100%
-  sure that the new commits dont' break anything
+  sure that the new commits didn't break anything
 */
 
 const execSync = require('child_process').execSync;
