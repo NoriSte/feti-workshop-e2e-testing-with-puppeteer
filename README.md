@@ -20,7 +20,7 @@ To attend the workshop you only need to know JS promises and async/await.
 
 - [Slides](https://slides.com/noriste/e2e-testing-workshop-feti)
 - [FETI (FrontEnders Ticino)](http://www.frontenders.ch/)
-- [Meetup (TBD)](http://www.frontenders.ch/eventi-passati.html)
+- [Meetup](https://www.meetup.com/it-IT/FrontEnders-Ticino/events/258183736/)
 - [Puppeteer API](https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md)
 
 ### Installation instructions
